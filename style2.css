@@ -1,0 +1,295 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+    overflow-x: hidden;
+    animation: fadeInBody 1s ease-in-out;
+  }
+  
+  /* Fade in on load */
+  @keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* ========== HEADER ========== */
+  header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: popUp 1.5s ease-out;
+  }
+  
+  @keyframes popUp {
+    0% {
+      transform: translate(-50%, -60%) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  .header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1.8s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  .header-content button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    animation: bounceIn 2s ease-in-out;
+  }
+  
+  .header-content button:hover {
+    transform: scale(1.1);
+    background-color: #00cccc;
+  }
+  
+  /* Bounce In */
+  @keyframes bounceIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    80% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+  
+  /* ========== SECTION STYLE ========== */
+  section {
+    padding: 80px 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(2px);
+  }
+  
+  section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffcc00;
+    animation: slideInLeft 1s ease forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  section img {
+    max-width: 250px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #000;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff;
+  }
+  
+  /* ========== BUTTONS ========== */
+  .button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    animation: fadeInUp 1.5s ease forwards;
+  }
+  
+  .button:hover {
+    background-color: #ffaa00;
+    transform: scale(1.05);
+  }
+  
+  /* ========== BUS SECTION ========== */
+  .bus {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+  }
+  
+  .bus h1 {
+    color: #00ffcc;
+  }
+  
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+    animation: scrollBus 20s linear infinite;
+  }
+  
+  @keyframes scrollBus {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .bus1 {
+    display: inline-block;
+    margin-right: 50px;
+    color: #ccc;
+    animation: fadeInBus 2s ease-in-out;
+  }
+  
+  .bus1 img {
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* ========== ABOUT / LOCATION / CONTACT ========== */
+  .about, .location, .contact {
+    background-color: #222;
+    color: #eee;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  .about h2, .location h2, .contact h2 {
+    font-size: 2rem;
+    color: #00ccff;
+    margin-bottom: 10px;
+  }
+  
+  /* ========== FORM ========== */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  form input, form textarea {
+    width: 90%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  form input:focus, form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ccff;
+  }
+  
+  form button {
+    background-color: #00ffff;
+    color: #000;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #00cccc;
+    transform: scale(1.05);
+  }
+  
+  /* ========== FOOTER ========== */
+  footer {
+    background-color: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    animation: fadeInUp 2s ease;
+  }
+  
+  /* ========== RESPONSIVE ========== */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .header-content {
+      padding: 0 20px;
+    }
+  
+    section img {
+      max-width: 90%;
+    }
+  
+    .bus1 {
+      display: block;
+      margin: 20px auto;
+    }
+  }
+  
