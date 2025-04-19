@@ -87,7 +87,7 @@ header{
     margin-top: 0.5em;
 
 }
-.title h1{
+/* .title h1{
     opacity: 0;
     transform: scale(0.8);
     animation: zoomFade 1.5s ease-out forwards;
@@ -98,7 +98,7 @@ header{
       opacity: 1;
       transform: scale(1);
     }
-  }
+  } */
   .title h3{
     opacity: 0;
     transform: translateY(-30px);
