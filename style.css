@@ -65,10 +65,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:2em;
+    gap:10px;
 }
 
 .title h3 {
