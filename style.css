@@ -70,12 +70,14 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding:2em;
 }
 .title h3 {
     font-size: 1.9em;
     letter-spacing: 0.1em;
     color: #ff00c8;
     font-weight: bold;
+    margin-top: 0.8em;
 
 }
 
