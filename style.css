@@ -66,6 +66,8 @@ header{
     letter-spacing: 0.1em;
     color: white;
     margin-top: 0.8em;
+    text-align:center;
+    line-height:0.2em;
 }
 
 .title h3 {
