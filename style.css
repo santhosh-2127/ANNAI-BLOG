@@ -61,7 +61,7 @@ header{
 }
 
 .title h1 {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: 2.2em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
@@ -70,8 +70,8 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding:2em;
 }
+
 .title h3 {
     font-size: 1.9em;
     letter-spacing: 0.1em;
@@ -100,8 +100,8 @@ header{
       opacity: 1;
       transform: scale(1);
     }
-  } 
-.title h3{
+  }
+  .title h3{
     opacity: 0;
     transform: translateY(-30px);
     animation: fadeTop 1.8s ease-out forwards;
