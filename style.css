@@ -65,11 +65,10 @@ header{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
-    margin-top: 0.8em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0.3em;
+    padding:2em;
 }
 
 .title h3 {
@@ -89,7 +88,7 @@ header{
     margin-top: 0.5em;
 
 }
-/* .title h1{
+.title h1{
     opacity: 0;
     transform: scale(0.8);
     animation: zoomFade 1.5s ease-out forwards;
@@ -100,8 +99,8 @@ header{
       opacity: 1;
       transform: scale(1);
     }
-  } */
-  .title h3{
+  } 
+.title h3{
     opacity: 0;
     transform: translateY(-30px);
     animation: fadeTop 1.8s ease-out forwards;
