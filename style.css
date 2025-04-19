@@ -65,7 +65,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
-    gap:10px;
+    width:100%;
 }
 
 .title h3 {
