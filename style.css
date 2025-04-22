@@ -35,7 +35,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 5em;
-   font-family: "Space Grotesk", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .Videoclip {
@@ -60,6 +60,7 @@ header {
 
 .title {
     margin: 0 auto;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .title h1 {
