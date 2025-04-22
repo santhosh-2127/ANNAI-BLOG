@@ -1337,6 +1337,7 @@ main {
     border-radius: 10px;
     background-color: transparent;
     gap: 2em;
+    height:auto;
 }
 
 /*--------------------------------------------------------*/
