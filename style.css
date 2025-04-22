@@ -371,15 +371,16 @@ main {
     background-repeat: no-repeat;
     overflow: hidden;
     border-radius: 10px;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 3em;
     padding: 2em;
 }
 
 .sec2 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     text-transform: uppercase;
-    color: #d60056;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    color: #FFFFFF;
     letter-spacing: 0.2em;
     position: relative;
     z-index: 2000;
