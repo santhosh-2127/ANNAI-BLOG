@@ -1300,7 +1300,7 @@ main {
 padding: 60px 20px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 margin-top: 20em;
-background-color:#C0267A; /* Deep Rose / Royal Pink */
+background-color:#FF5FFF; /* Deep Rose / Royal Pink */
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -1521,6 +1521,7 @@ height: 100vh;
         font-size: 0.9em;
     }
 }
+
 
 
 
